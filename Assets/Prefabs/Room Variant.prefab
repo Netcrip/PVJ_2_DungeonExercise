@@ -137,6 +137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7670376697060723136, guid: 62c8cca5557502c4ca3ca4f5603894f4,
+        type: 3}
+      propertyPath: _id
+      value: Jarrones
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

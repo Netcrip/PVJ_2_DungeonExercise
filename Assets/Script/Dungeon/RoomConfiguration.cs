@@ -1,18 +1,32 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class RoomConfiguration : MonoBehaviour
+[CreateAssetMenu(menuName = "custom/Room configuration")]
+public class RoomConfiguration : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private RoomBehaviour[] _rooms;
+
+    private Dictionary<string, RoomBehaviour> _idRoom;
+
+    private void Awake()
     {
-        
+        _idRoom = new Dictionary<string, RoomBehaviour>();
+        foreach (var room in _rooms)
+        {
+            _idRoom.Add(room.Id, room);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public RoomBehaviour GetPrefabRoom(string id)
     {
-        
+        if(!_idRoom.TryGetValue(id,out var room))
+        {
+            throw new Exception($"Room whit id {id} dose not exist");
+        }
+        return room;
     }
 }
+

@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f773a8f60fe180b48a244ace0b9714a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _id: Vacio
   wallsEntrance:
   - {fileID: 8849933086108558601}
   - {fileID: 2597512179577440519}
