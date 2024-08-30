@@ -6,41 +6,32 @@ public class RoomBehaviour : MonoBehaviour
 {
     //0-Up, 1-Down, 2-Right, 3-Left
     [SerializeField] private GameObject[] wallsEntrance;
+    
     [SerializeField] private GameObject[] doors;
 
     [SerializeField] private GameObject[] walls;
 
-    //public bool[] testStatus;
-
-   /* void Start()
+    [SerializeField] private GameObject[] pilars;
+    public void UpdateRoom(Cell currentCell)
     {
-        UpdateRoom(testStatus);
-    }*/
-    
-    /*public void UpdateRoom(bool[] status, bool[] WallStatus)
-    {
-        for (int i = 0; i < status.Length; i++)
+        for (int i = 0; i < currentCell.status.Length; i++)
         {
-            if(!WallStatus[i])
+
+            if (currentCell.pillarStatus[i])
             {
-            doors[i].SetActive(status[i]);
-            wallsEntrance[i].SetActive(!status[i]);
+                pilars[i].SetActive(true);
+            }
+            if (currentCell.wallStatus[i])
+            {
+                walls[i].SetActive(false);
             }
             else
-                walls[i].SetActive(false);
+            {
+                doors[i].SetActive(currentCell.status[i]);
+                wallsEntrance[i].SetActive(!currentCell.status[i]);
+            }
             
-        }
 
-    }*/
-    public void UpdateRoom(bool[] status)
-    {
-        for (int i = 0; i < status.Length; i++)
-        {
-            
-            doors[i].SetActive(status[i]);
-            wallsEntrance[i].SetActive(!status[i]);
-          
-            
         }
 
     }

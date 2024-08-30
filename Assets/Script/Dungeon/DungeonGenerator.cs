@@ -1,16 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class DungeonGenerator : MonoBehaviour
 {
-    public class Cell
-    {
-        public bool visited = false;
-        public bool[] status = new bool[4];
-    }
     
     [SerializeField] Vector2 _dungeonSize;
     [SerializeField] int _startPos = 0;
@@ -35,13 +33,13 @@ public class DungeonGenerator : MonoBehaviour
             {
                 Cell currentCell = _board[Mathf.FloorToInt(i+j*_dungeonSize.x)];
 
-                if(currentCell.visited)
+                if(currentCell.visited || currentCell.generate)
                 {
-                    int randomRoom = UnityEngine.Random.Range(0,_rooms.Length) ;
+                    int randomRoom = Random.Range(0,_rooms.Length) ;
 
                     GameObject newRoom =   Instantiate(_rooms[randomRoom], new Vector3(i * offset.x, 0f, -j * offset.y),Quaternion.identity) as GameObject;
                     RoomBehaviour rb = newRoom.GetComponent<RoomBehaviour>();
-                    rb.UpdateRoom(currentCell.status);
+                    rb.UpdateRoom(currentCell);
 
                     newRoom.name += " " + i + "-" + j;
                 }
@@ -52,43 +50,25 @@ public class DungeonGenerator : MonoBehaviour
 
     public void MazeGenerator()
     {
-        //Create Dungeon board
-        _board = new List<Cell>();
+        _board = CreateBoard();
 
-        float boardLenght = _dungeonSize.x * _dungeonSize.y;
 
-        for(int i = 0; i < boardLenght; i++)
-        {
-            _board.Add(new Cell());
-        }
-      
-       //Create Dungeon Maze
-       //StarPosition determina el casillero donde el arranca el Dungeon
+        //Create Dungeon Maze
+        //StarPosition determina el casillero donde el arranca el Dungeon
         int currentCell = _startPos;
 
         //Generamos la Pila(Stack) donde armaremos el Laberinto
-        Stack<int> path = new Stack<int>();
-     
-        int k = 0;
-        /*for(int i=0;i<_board.Count;i++)*/while(k < 1000)
+        Stack<int> path = new Stack<int>();  
+ 
+        while (currentCell!= _board.Count -1)
         {
-            k ++;
-          
-            //marca la celda actual como visitada
+
             _board[currentCell].visited = true;
 
-            //si se alcanza la celda de salida
-            //ser termina el bucle
-            if(currentCell == _board.Count -1)
-            {
-                Debug.Log(k);
-                break;
-            }
+            List<int> neighbors = CheckNeighbors(currentCell,false);
+            List<int> neighborsVisited = CheckNeighbors(currentCell, true);
 
-            //Check Neighbors cells
-            List<int> neighbors = CheckNeighbors(currentCell);
-
-            if(neighbors.Count == 0)
+            if (neighbors.Count == 0)
             {
                 if(path.Count == 0)
                 {
@@ -102,85 +82,242 @@ public class DungeonGenerator : MonoBehaviour
             else
             {
                 path.Push(currentCell);
-                
-                currentCell=DoorCheck(currentCell,neighbors);
+                pilarCheck(currentCell, neighborsVisited);
+                currentCell =DoorCheck(currentCell,neighbors);
             }
         }
+        
+        List<int> lastVisited = CheckNeighbors(currentCell, true);
+        pilarCheck(currentCell, lastVisited);
+        _board[currentCell].visited = true;
 
-       //Instantiate rooms
+        //Cargar lso pilares de las celdas no visitadas.
+        for(int i = 0;i < _board.Count; i++)
+        {
+            if (_board[i].generate)
+            {
+                lastVisited = CheckNeighbors(i, true);
+                pilarCheck(i, lastVisited);
+            }  
+        }
+
         GenerateDungeon();
       
     }
 
+    private List<Cell> CreateBoard()
+    {
+        // Create Dungeon board
+        _board = new List<Cell>();
+
+        float boardLenght = _dungeonSize.x * _dungeonSize.y;
+
+        for (int i = 0; i < boardLenght; i++)
+        {
+            _board.Add(new Cell());
+        }
+        return _board;
+    }
+   
+    private void pilarCheck(int currentCell, List<int> neighbors)
+    {
+        /* 
+          Diagrama de posiciones:
+            0             1
+             ═╬═════════╬═
+              ║    0    ║
+              ║3       2║
+              ║    1    ║
+             ═╬═════════╬═
+            3            2
+        */
+
+        // Inicializar el estado de las paredes alrededor de la celda actual
+        bool[] wall = new bool[4]; // [0] Arriba, [1] Abajo, [2] Derecha, [3] Izquierda
+
+        // Determinar las paredes alrededor de la celda actual
+        for (int i = 0; i < neighbors.Count; i++)
+        {
+            int neighbor = neighbors[i];
+            int direction = neighbor - currentCell; // Corregir la dirección para que sea relativa a la celda actual
+
+            switch (direction)
+            {
+                case 1: // Derecha
+                    wall[2] = true;
+                    break;
+                case -1: // Izquierda
+                    wall[3] = true;
+                    break;
+                default:
+                    if (direction > 0) // Abajo
+                    {
+                        wall[1] = true;
+                    }
+                    else // Arriba
+                    {
+                        wall[0] = true;
+                    }
+                    break;
+            }
+        }
+
+        // Primer elemento sin vecinos
+        if (!wall[0] && !wall[1] && !wall[2] && !wall[3])
+        {
+            // No hay paredes alrededor, activar todos los pilares
+            _board[currentCell].pillarStatus[0] = true;
+            _board[currentCell].pillarStatus[1] = true;
+            _board[currentCell].pillarStatus[2] = true;
+            _board[currentCell].pillarStatus[3] = true;
+        }
+        else
+        {
+            //  combinaciones de paredes 
+            if (wall[0] && !wall[1] && !wall[2] && !wall[3])
+            {
+                // Pared arriba
+                _board[currentCell].pillarStatus[2] = true;
+                _board[currentCell].pillarStatus[3] = true;
+            }
+            else if (!wall[0] && wall[1] && !wall[2] && !wall[3])
+            {
+                // Pared abajo
+                _board[currentCell].pillarStatus[0] = true;
+                _board[currentCell].pillarStatus[1] = true;
+            }
+            else if (!wall[0] && !wall[1] && wall[2] && !wall[3])
+            {
+                // Pared derecha
+                _board[currentCell].pillarStatus[0] = true;
+                _board[currentCell].pillarStatus[3] = true;
+            }
+            else if (!wall[0] && !wall[1] && !wall[2] && wall[3])
+            {
+                // Pared izquierda
+                _board[currentCell].pillarStatus[1] = true;
+                _board[currentCell].pillarStatus[2] = true;
+            }
+            else if (wall[0] && !wall[1] && wall[2] && !wall[3])
+            {
+                // Pared arriba y derecha
+                _board[currentCell].pillarStatus[3] = true;
+            }
+            else if (wall[0] && !wall[1] && !wall[2] && wall[3])
+            {
+                // Pared arriba y izquierda
+                _board[currentCell].pillarStatus[2] = true;
+            }
+            else if (!wall[0] && wall[1] && wall[2] && !wall[3])
+            {
+                // Pared abajo y derecha
+                _board[currentCell].pillarStatus[0] = true;
+            }
+            else if (!wall[0] && wall[1] && !wall[2] && wall[3])
+            {
+                // Pared abajo e izquierda
+                _board[currentCell].pillarStatus[1] = true;
+            }
+        }
+    }
+
     private int DoorCheck(int currentCell, List<int> neighbors){
-           int newCell = neighbors[UnityEngine.Random.Range(0, neighbors.Count)];
-           int[] directionStatus = new int[2];
-           int direction = newCell - currentCell;
-           /* 
-                  1
+            int element = Random.Range(0, neighbors.Count); 
+            int newCell = neighbors[element];
+          
+            int direction = newCell - currentCell;
+            int[] directionStatus = CheckDirection(direction);
+            _board[currentCell].status[directionStatus[0]] = true;
+        //_board[newCell].status[directionStatus[1]] = true;
+            _board[newCell].wallStatus[directionStatus[1]] = true;
+           
+
+        neighbors.Remove(element);
+        if (Random.Range(0, 100)<30 && neighbors.Count>0)
+            {
+            
+            element = Random.Range(0, neighbors.Count);
+            int newDoor = neighbors[element];
+            direction = newDoor - currentCell;
+            directionStatus = CheckDirection(direction);
+            _board[currentCell].status[directionStatus[0]] = true;
+            //_board[newDoor].status[directionStatus[1]] = true;
+            _board[newDoor].wallStatus[directionStatus[1]] = true;
+
+            _board[newDoor].generate = true;
+        }
+
+            currentCell = newCell;
+
+        return currentCell;
+    }
+
+
+    private int[] CheckDirection(int direction)
+    {
+        int[] directionStatus = new int[6]; ;
+        /* 
+           0      1      1
             ═╬═════════╬═
              ║    0    ║
             2║3       2║3
              ║    1    ║
             ═╬═════════╬═
-                  0
+           3      0      2
             */
-            if (direction == 1)        // Derecha
-            {
-                directionStatus[0] = 2;
-                directionStatus[1] = 3;
-            }
-            else if (direction == -1)  // Izquierda
-            {
-                directionStatus[0] = 3;
-                directionStatus[1] = 2;
-            }
-            else if (direction > 0)    // Abajo
-            {
-                directionStatus[0] = 1;
-                directionStatus[1] = 0;
-            }
-            else                       // Arriba
-            {
-                directionStatus[0] = 0;
-                directionStatus[1] = 1;
-            }
+        if (direction == 1)        // Derecha
+        {
+            directionStatus[0] = 2;
+            directionStatus[1] = 3;
 
-            _board[currentCell].status[directionStatus[0]] = true;
-             currentCell = newCell;
-            _board[currentCell].status[directionStatus[1]] = true;
+        }
+        else if (direction == -1)  // Izquierda
+        {
+            directionStatus[0] = 3;
+            directionStatus[1] = 2;
 
+        }
+        else if (direction > 0)    // Abajo
+        {
+            directionStatus[0] = 1;
+            directionStatus[1] = 0;
 
-    return currentCell;
+        }
+        else                       // Arriba
+        {
+            directionStatus[0] = 0;
+            directionStatus[1] = 1;
+
+        }
+
+        return directionStatus;
     }
-
-
     
     //Chequea las celdas vecinas
-    List<int> CheckNeighbors(int cell)
+    List<int> CheckNeighbors(int cell, bool visited)
     {
         List<int> neighbors = new List<int>();
         
         //check Up
-        if(cell - _dungeonSize.x >= 0 && !_board[Mathf.FloorToInt(cell - _dungeonSize.x)].visited)
+        if(cell - _dungeonSize.x >= 0 && _board[Mathf.FloorToInt(cell - _dungeonSize.x)].visited == visited)
         {
             neighbors.Add(Mathf.FloorToInt(cell - _dungeonSize.x));
         }
         
         //check Down
-        if(cell + _dungeonSize.x < _board.Count && !_board[Mathf.FloorToInt(cell + _dungeonSize.x)].visited)
+        if(cell + _dungeonSize.x < _board.Count && _board[Mathf.FloorToInt(cell + _dungeonSize.x)].visited == visited)
         {
             neighbors.Add(Mathf.FloorToInt(cell + _dungeonSize.x));
         }
 
         //check Right
-        if((cell + 1) % _dungeonSize.x != 0 && !_board[Mathf.FloorToInt(cell + 1)].visited)
+        if((cell + 1) % _dungeonSize.x != 0 && _board[Mathf.FloorToInt(cell + 1)].visited == visited)
         {
             neighbors.Add(Mathf.FloorToInt(cell + 1));
         }
 
         //check Left
-        if(cell % _dungeonSize.x != 0 && !_board[Mathf.FloorToInt(cell - 1)].visited)
+        if(cell % _dungeonSize.x != 0 && _board[Mathf.FloorToInt(cell - 1)].visited == visited)
         {
             neighbors.Add(Mathf.FloorToInt(cell - 1));
         }
@@ -189,19 +326,6 @@ public class DungeonGenerator : MonoBehaviour
     }
 
 
-    private void OnGUI() 
-    {
-        float w = Screen.width/2;
-        float h = Screen.height - 80;
-        if(GUI.Button(new Rect(w,h,250,50), "Regenerate Dungeon"))
-        {
-            RegenerateDungeon();
-        }
-    }
-
-    void RegenerateDungeon()
-    {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+   
     
 }

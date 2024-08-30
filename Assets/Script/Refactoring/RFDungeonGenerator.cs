@@ -1,7 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class RFDungeonGenerator : MonoBehaviour
 {
@@ -217,7 +221,7 @@ public class RFDungeonGenerator : MonoBehaviour
             // Aplica el estado de la celda actual y la nueva celda
             _board[currentCell].status[directionStatus[0]] = true;
             _board[newCell].status[directionStatus[1]] = true;
-            _board[newCell].Create = true; //marca la celda actual como visitada
+            //_board[newCell].Create = true; //marca la celda actual como visitada
             neighbors.RemoveAt(element); // elimina al vecino por si hay una segunda puerta para que no se repita
             //Debug.Log(newCell);
 
