@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoomBehaviour : MonoBehaviour
 {
+    [SerializeField] private string id;
     //0-Up, 1-Down, 2-Right, 3-Left
     [SerializeField] private GameObject[] wallsEntrance;
     

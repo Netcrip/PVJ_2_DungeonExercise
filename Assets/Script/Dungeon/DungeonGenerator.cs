@@ -14,7 +14,9 @@ public class DungeonGenerator : MonoBehaviour
     [SerializeField] int _startPos = 0;
 
     [SerializeField] GameObject[]  _rooms;
-    [SerializeField] Vector2 offset;
+    [SerializeField] Vector2 _offset;
+
+    [SerializeField] DungeonFactory _factory;
     
     List<Cell> _board;
    
@@ -27,25 +29,7 @@ public class DungeonGenerator : MonoBehaviour
 
     void GenerateDungeon()
     {
-        for(int i = 0; i < _dungeonSize.x; i++)
-        {
-            for(int j = 0; j < _dungeonSize.y; j++)
-            {
-                Cell currentCell = _board[Mathf.FloorToInt(i+j*_dungeonSize.x)];
-
-                if(currentCell.visited || currentCell.generate)
-                {
-                    int randomRoom = Random.Range(0,_rooms.Length) ;
-
-                    GameObject newRoom =   Instantiate(_rooms[randomRoom], new Vector3(i * offset.x, 0f, -j * offset.y),Quaternion.identity) as GameObject;
-                    RoomBehaviour rb = newRoom.GetComponent<RoomBehaviour>();
-                    rb.UpdateRoom(currentCell);
-
-                    newRoom.name += " " + i + "-" + j;
-                }
-            }
-        }
-
+        _factory.Create(_dungeonSize,_board,_offset);        
     }
 
     public void MazeGenerator()
