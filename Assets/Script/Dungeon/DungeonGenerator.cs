@@ -1,4 +1,5 @@
-﻿using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -36,7 +37,7 @@ public class DungeonGenerator : MonoBehaviour
 
                 if(currentCell.visited)
                 {
-                    int randomRoom = Random.Range(0,_rooms.Length) ;
+                    int randomRoom = UnityEngine.Random.Range(0,_rooms.Length) ;
 
                     GameObject newRoom =   Instantiate(_rooms[randomRoom], new Vector3(i * offset.x, 0f, -j * offset.y),Quaternion.identity) as GameObject;
                     RoomBehaviour rb = newRoom.GetComponent<RoomBehaviour>();
@@ -49,97 +50,73 @@ public class DungeonGenerator : MonoBehaviour
 
     }
 
-
-
     public void MazeGenerator()
     {
-
+        //Create Dungeon board
         _board = new List<Cell>();
 
-        _board = BoardGenerator();
+        float boardLenght = _dungeonSize.x * _dungeonSize.y;
 
-        PathGenerator(_board);
+        for(int i = 0; i < boardLenght; i++)
+        {
+            _board.Add(new Cell());
+        }
+      
+       //Create Dungeon Maze
+       //StarPosition determina el casillero donde el arranca el Dungeon
+        int currentCell = _startPos;
+
+        //Generamos la Pila(Stack) donde armaremos el Laberinto
+        Stack<int> path = new Stack<int>();
+     
+        int k = 0;
+        /*for(int i=0;i<_board.Count;i++)*/while(k < 1000)
+        {
+            k ++;
+          
+            //marca la celda actual como visitada
+            _board[currentCell].visited = true;
+
+            //si se alcanza la celda de salida
+            //ser termina el bucle
+            if(currentCell == _board.Count -1)
+            {
+                Debug.Log(k);
+                break;
+            }
+
+            //Check Neighbors cells
+            List<int> neighbors = CheckNeighbors(currentCell);
+
+            if(neighbors.Count == 0)
+            {
+                if(path.Count == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    currentCell = path.Pop();
+                }
+            }
+            else
+            {
+                path.Push(currentCell);
+                
+                currentCell=DoorCheck(currentCell,neighbors);
+            }
+        }
 
        //Instantiate rooms
         GenerateDungeon();
       
     }
 
-    private List<Cell> BoardGenerator()
-    {
-        _board = new List<Cell>();
-
-        float boardLenght = _dungeonSize.x * _dungeonSize.y;
-
-        for (int i = 0; i < boardLenght; i++)
-        {
-            _board.Add(new Cell());
-        }
-
-        return _board;
-    }
-
-
-    private void PathGenerator(List<Cell> _board)
-    {
-        //Create Dungeon Maze
-        //StarPosition determina el casillero donde el arranca el Dungeon
-        int currentCell = _startPos;
-        //marca la celda actual como visitada
-        _board[currentCell].visited = true;
-
-        //Generamos la Pila(Stack) donde armaremos el Laberinto
-        Stack<int> path = new Stack<int>();
-
-        if (_board.Count>1)
-        {
-            for(int i=0; i < _board.Count; i++)
-            {
-                List<int> neighbors = CheckNeighbors(currentCell);
-                if (neighbors.Count == 0)
-                {
-                    if (path.Count == 0)
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        currentCell = path.Pop();
-                    }
-                }
-                else
-                {
-                    path.Push(currentCell);
-                    currentCell = DoorCheck(currentCell, neighbors);
-                }
-
-            }
-        }
-        else if(_board.Count == 1)
-        {
-            currentCell = path.Pop();
-        }
-        else 
-        {
-            Debug.Log("El dungeon debe de tener un elemento");
-        }
-   
-    }
-
-    private int DoorCheck(int currentCell, List<int> neighbors)
-    {
-
-        int random = Random.Range(1, neighbors.Count);
-        int newCell=0;
-        for (int i = 0; i < random; i++)
-        {
-            int element = Random.Range(0, neighbors.Count);
-            newCell = neighbors[element];
-            // 0 - Up, 1 - Down, 2 - Right, 3 - Left
-            int[] directionStatus = new int[4];
-            // Calcula la dirección según la diferencia entre newCell y currentCell
-            int direction = newCell - currentCell;
-            /* 
+    private int DoorCheck(int currentCell, List<int> neighbors){
+           int newCell = neighbors[UnityEngine.Random.Range(0, neighbors.Count)];
+           int[] directionStatus = new int[2];
+           int direction = newCell - currentCell;
+           /* 
                   1
             ═╬═════════╬═
              ║    0    ║
@@ -169,21 +146,13 @@ public class DungeonGenerator : MonoBehaviour
                 directionStatus[1] = 1;
             }
 
-            // Aplica el estado de la celda actual y la nueva celda
             _board[currentCell].status[directionStatus[0]] = true;
-            _board[newCell].status[directionStatus[1]] = true;
-            _board[newCell].visited = true; //marca la celda actual como visitada
-            neighbors.RemoveAt(element); // elimina al vecino por si hay una segunda puerta para que no se repita
-
-        }
-        currentCell = newCell; 
+             currentCell = newCell;
+            _board[currentCell].status[directionStatus[1]] = true;
 
 
-
-
-        return currentCell;
+    return currentCell;
     }
-
 
 
     
