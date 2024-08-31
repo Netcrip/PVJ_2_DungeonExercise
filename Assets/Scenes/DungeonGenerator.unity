@@ -402,7 +402,6 @@ GameObject:
   m_Component:
   - component: {fileID: 440301668}
   - component: {fileID: 440301667}
-  - component: {fileID: 440301669}
   m_Layer: 0
   m_Name: Dungeon
   m_TagString: Untagged
@@ -424,11 +423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dungeonSize: {x: 10, y: 5}
   _startPos: 0
-  _rooms:
-  - {fileID: 7609309791892020895, guid: 62c8cca5557502c4ca3ca4f5603894f4, type: 3}
-  - {fileID: 6021426421752343607, guid: b2fab175eccce8640b00a4b5eead8984, type: 3}
-  offset: {x: 6, y: 6}
-  _factory: {fileID: 440301669}
+  _offset: {x: 6, y: 6}
+  _roomConfiguration: {fileID: 11400000, guid: dd382aebd39770844820ff275f7b5d32, type: 2}
 --- !u!4 &440301668
 Transform:
   m_ObjectHideFlags: 0
@@ -444,21 +440,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &440301669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440301666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3658a707f3ec38445b38522ae6822ed0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rooms:
-  - {fileID: 7609309791892020895, guid: 62c8cca5557502c4ca3ca4f5603894f4, type: 3}
-  - {fileID: 6021426421752343607, guid: b2fab175eccce8640b00a4b5eead8984, type: 3}
 --- !u!1001 &561889958
 PrefabInstance:
   m_ObjectHideFlags: 0

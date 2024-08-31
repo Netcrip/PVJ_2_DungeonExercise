@@ -13,14 +13,20 @@ public class DungeonGenerator : MonoBehaviour
     [SerializeField] Vector2 _dungeonSize;
     [SerializeField] int _startPos = 0;
 
-    [SerializeField] GameObject[]  _rooms;
+    //[SerializeField] GameObject[]  _rooms;
     [SerializeField] Vector2 _offset;
 
-    [SerializeField] DungeonFactory _factory;
+    DungeonFactory _factory;
+
+    [SerializeField] RoomConfiguration _roomConfiguration;
     
     List<Cell> _board;
    
-    // Start is called before the first frame update
+
+   private void Awake() {
+     _factory = new DungeonFactory(Instantiate(_roomConfiguration));
+   }
+    // Start is called before the first frame update 
     void Start()
     {
         MazeGenerator();
@@ -36,7 +42,13 @@ public class DungeonGenerator : MonoBehaviour
     {
         _board = CreateBoard();
 
+        GeneratePath();
+        
+        GenerateDungeon();
+      
+    }
 
+    private void GeneratePath(){
         //Create Dungeon Maze
         //StarPosition determina el casillero donde el arranca el Dungeon
         int currentCell = _startPos;
@@ -84,9 +96,6 @@ public class DungeonGenerator : MonoBehaviour
                 pilarCheck(i, lastVisited);
             }  
         }
-
-        GenerateDungeon();
-      
     }
 
     private List<Cell> CreateBoard()

@@ -18,15 +18,18 @@ public class RoomConfiguration : ScriptableObject
             _idRoom.Add(room.Id, room);
         }
     }
+ 
 
-
-    public RoomBehaviour GetPrefabRoom(string id)
+    public RoomBehaviour GetPrefabRoomId(string id)
     {
         if(!_idRoom.TryGetValue(id,out var room))
         {
             throw new Exception($"Room whit id {id} dose not exist");
         }
         return room;
+    }
+    public int GetCount(){
+        return _idRoom.Count;
     }
 }
 
