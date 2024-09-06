@@ -10,6 +10,8 @@ public class Cell
 
     public bool[] pillarStatus { get; set; }
 
+    public string roomId { get; set; }
+
     public Cell()
     {
         visited=false;

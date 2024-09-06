@@ -6,6 +6,6 @@ public class EnemyController : MonoBehaviour, IDamageable
 {
     public void Damage(int damageAmount)
     {
-        Debug.Log("Damage:"+ damageAmount);
+        Debug.Log("Damage: "+ damageAmount);
     }
 }

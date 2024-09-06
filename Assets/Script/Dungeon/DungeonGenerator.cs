@@ -20,6 +20,7 @@ public class DungeonGenerator : MonoBehaviour
     DungeonFactory _dungeonFactory;
     BoardManager _boardManager;
     MazeManager _mazeManager;
+    SaveDungeon _saveDungeon;
 
     //List<Cell> _board;
    
@@ -28,6 +29,7 @@ public class DungeonGenerator : MonoBehaviour
      _dungeonFactory = new DungeonFactory(Instantiate(_roomConfiguration));
      _boardManager = new BoardManager(_dungeonSize);
      _mazeManager = new MazeManager(_boardManager,_dungeonSize);
+     _saveDungeon = new SaveDungeon();
    }
     // Start is called before the first frame update 
     void Start()
@@ -41,6 +43,11 @@ public class DungeonGenerator : MonoBehaviour
         _mazeManager.GeneratePath(_startPos);
         _dungeonFactory.Create(_dungeonSize,_boardManager.Board,_offset);      
 
+    }
+    
+    public void SaveDungeon()
+    {
+        _saveDungeon.Save(_boardManager.Board);
     }
     
 }

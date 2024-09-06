@@ -6,40 +6,52 @@ public class PlayerAttack : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    Animator _anim;
-    List<GameObject> _damageableInRange;
-    Camera _mainCamera;
-    Ray _ray;
-    RaycastHit _hit;
+    private Animator _anim;
+    private List <IDamageable> _damageablesInRange;
+    private Camera _mainCamera;
+    private Ray _ray;
+    private RaycastHit _hit;
+
     [SerializeField]LayerMask _layerMask;
     void Start()
     {        
         _anim = GetComponentInChildren<Animator>();
         _mainCamera=Camera.main;
+        _damageablesInRange = new List<IDamageable>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        _ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(_ray, out _hit ,1000,_layerMask)){
-            
-        }
-        /* if (Input.GetMouseButtonDown(0)){
-            SimpleAttack();
-        }
+
+        if (Input.GetMouseButtonDown(0)){
+           _ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
+            if(Physics.Raycast(_ray, out _hit ,20,_layerMask)){
+                SimpleAttack(_hit.transform.position);
+            }
+        }/*
         else if(Input.GetMouseButtonDown(1)){
             StrongAttack();
         } */
-        if(Input.GetKey(KeyCode.LeftControl)){
+        if (Input.GetKey(KeyCode.LeftControl)){
             Defense(true);
         }
         else
             Defense(false);
     }
 
-    private void SimpleAttack(){
-        _anim.SetTrigger("SimpleAttack");
+    private void SimpleAttack(Vector3 toLook){
+        if(_damageablesInRange.Count > 0)
+        {
+          
+            this.transform.LookAt(toLook);
+            _anim.SetTrigger("SimpleAttack");
+            foreach (var enemy in _damageablesInRange)
+            {
+                enemy.Damage(10);
+            }
+        }
+        
     }
     private void StrongAttack(){
         _anim.SetTrigger("StrongAttack");
@@ -49,17 +61,25 @@ public class PlayerAttack : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        var damageable=other.GetComponent<IDamageable>();
-        if(damageable!=null){
-            Debug.Log(damageable);
-            _damageableInRange.Add(other.gameObject);
+        var damagable = other.GetComponent<IDamageable>() ;
+
+        if (damagable != null)
+        {
+            _damageablesInRange.Add(damagable);
+            Debug.Log("Damagable Add " + other.name);
+            Debug.Log("Damagables in Range " + _damageablesInRange.Count); 
+
         }
+
     }
     private void OnTriggerExit(Collider other) {
-        var damageable=other.GetComponent<IDamageable>();
-        if(damageable!=null && _damageableInRange.Contains(other.gameObject)){
-            _damageableInRange.Remove(other.gameObject);
+        IDamageable damagable = other.GetComponent<IDamageable>();
+
+        if (damagable != null && _damageablesInRange.Contains(damagable))
+        {
+            _damageablesInRange.Remove(damagable);
+            Debug.Log("Damagables in Range " + _damageablesInRange.Count);
         }
-        
+
     }
 }

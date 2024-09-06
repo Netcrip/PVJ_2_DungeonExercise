@@ -27,7 +27,9 @@ public class DungeonFactory
                     RoomBehaviour rb = Object.Instantiate(_roomConfiguration.GetPrefabRoomId(id), new Vector3(i * offset.x, 0f, -j * offset.y), Quaternion.identity);
                 rb.UpdateRoom(currentCell);
 
-                rb.name += " " + i + "-" + j;  
+                rb.name += " " + i + "-" + j;
+
+                 board[Mathf.FloorToInt(i + j * dungeonSize.x)].roomId = id;
                 }            
             }
         }
