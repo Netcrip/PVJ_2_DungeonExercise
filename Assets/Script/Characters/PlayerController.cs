@@ -55,8 +55,9 @@ public class PlayerController : MonoBehaviour
         }
  
         //Control de Animaciones
-        _anim.SetFloat("WalkVelocity",_direction.magnitude, 0.05f, Time.deltaTime);        
+        _anim.SetFloat("WalkVelocity",_direction.magnitude, 0.05f, Time.deltaTime);     
+         
     }
 
-
+   
 }

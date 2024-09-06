@@ -13,26 +13,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Watcher_A Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 7035340801813807993, guid: c4af682be65ae26478eefbc1f12c90a1,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703791457758140867, guid: c4af682be65ae26478eefbc1f12c90a1,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703791457758140867, guid: c4af682be65ae26478eefbc1f12c90a1,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703791457758140867, guid: c4af682be65ae26478eefbc1f12c90a1,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7703791457758140867, guid: c4af682be65ae26478eefbc1f12c90a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,11 +62,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7703791457758140867, guid: c4af682be65ae26478eefbc1f12c90a1,
-        type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
