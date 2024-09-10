@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public class RoomBehaviour : MonoBehaviour
@@ -14,6 +15,7 @@ public class RoomBehaviour : MonoBehaviour
     [SerializeField] private GameObject[] walls;
 
     [SerializeField] private GameObject[] pilars;
+
     public void UpdateRoom(Cell currentCell)
     {
         for (int i = 0; i < currentCell.status.Length; i++)
@@ -37,6 +39,7 @@ public class RoomBehaviour : MonoBehaviour
         }
 
     }
+    
     public string Id =>_id;
 
 }

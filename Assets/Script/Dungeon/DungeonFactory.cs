@@ -15,23 +15,28 @@ public class DungeonFactory
 
     public void Create(Vector2 dungeonSize, List<Cell> board,Vector2 offset)
     {
-        for (int i = 0; i < dungeonSize.x; i++)
+        int totalWidth = Mathf.FloorToInt(dungeonSize.x);
+        int totalHeight = Mathf.FloorToInt(dungeonSize.y);
+
+        for (int i = 0; i < totalWidth; i++)
         {
-            for (int j = 0; j < dungeonSize.y; j++)
+            for (int j = 0; j < totalHeight; j++)
             {
-                Cell currentCell = board[Mathf.FloorToInt(i + j * dungeonSize.x)];
-                int cellNumber = Mathf.FloorToInt(i + j * dungeonSize.x); 
+                int cellIndex= i+j*totalWidth;
+                Cell currentCell = board[cellIndex];
+                
                 if (currentCell.visited || currentCell.generate)
                 {   
-                    string id = _rs.GetRoomId(board,cellNumber,_roomConfiguration);
+                    string id = _rs.GetRoomId(board,cellIndex,_roomConfiguration);
                     RoomBehaviour rb = Object.Instantiate(_roomConfiguration.GetPrefabRoomId(id), new Vector3(i * offset.x, 0f, -j * offset.y), Quaternion.identity);
-                rb.UpdateRoom(currentCell);
+                    rb.UpdateRoom(currentCell);
 
-                rb.name += " " + i + "-" + j;
+                    rb.name += " " + i + "-" + j;
 
                  board[Mathf.FloorToInt(i + j * dungeonSize.x)].roomId = id;
                 }            
             }
         }
+         Debug.Log(dungeonSize);
     }
 }

@@ -6,7 +6,7 @@ public class MazeManager
 {
     private BoardManager _boardManager;
     private CellManager _cellManager;
-
+    
     public MazeManager( BoardManager boardManager, Vector2 dungeonSize){
         _boardManager=boardManager;
         _cellManager = new CellManager(boardManager, dungeonSize);

@@ -9,7 +9,13 @@ public class RoomSelector
   public string GetRoomId(List<Cell> board, int cellNumber,RoomConfiguration roomConfiguration ){
     string id="Vacio";
     int randomRoom = Random.Range(0,roomConfiguration.GetCount());
-    if(cellNumber==board.Count-1){
+    if(board[cellNumber].roomId!=null){
+        return board[cellNumber].roomId;
+    }
+    else if(board[cellNumber].roomId!=null){
+        id= board[cellNumber].roomId;
+    }
+    else if(cellNumber==board.Count-1){
         id="Boss";
     }
     else if(cellNumber==0)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 //using SVS;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -57,7 +58,5 @@ public class PlayerController : MonoBehaviour
         //Control de Animaciones
         _anim.SetFloat("WalkVelocity",_direction.magnitude, 0.05f, Time.deltaTime);     
          
-    }
-
-   
+    }   
 }
