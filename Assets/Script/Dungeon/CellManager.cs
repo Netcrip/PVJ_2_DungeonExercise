@@ -12,7 +12,7 @@ public class CellManager
         _dungeonSize= dungeonSize;
     }
 
-     public void PilarCheck(int currentCell, List<int> neighbors)
+    public void PilarCheck(int currentCell, List<int> neighbors)
     {
         /* 
           Diagrama de posiciones:

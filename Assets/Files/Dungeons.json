@@ -1,1 +1,2039 @@
-{"dungeons":[{"nombre":"10 X 5 9/9/2024 10:03:48 a. m.","dungeonSizex":10.0,"dungeonSizey":5.0,"datos":[{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[true,true,true,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,true,false],"pillarStatus":[false,false,false,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,false,true],"wallStatus":[false,false,true,false],"pillarStatus":[true,false,false,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,false,true],"wallStatus":[false,false,true,false],"pillarStatus":[true,false,false,true],"roomId":"Enemy"},{"visited":true,"generate":true,"status":[false,false,false,true],"wallStatus":[false,false,true,false],"pillarStatus":[true,false,false,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,true],"wallStatus":[false,true,false,false],"pillarStatus":[true,true,false,false],"roomId":"Vacio"},{"visited":true,"generate":true,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,false,false],"roomId":"Vacio"},{"visited":true,"generate":true,"status":[false,false,true,false],"wallStatus":[true,false,false,true],"pillarStatus":[false,false,false,false],"roomId":"Vacio"},{"visited":true,"generate":true,"status":[false,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,false,false,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,true,false,false],"pillarStatus":[true,true,false,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,true,false],"pillarStatus":[false,false,false,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,false,true],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Jarrones"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Enemy"},{"visited":true,"generate":false,"status":[false,true,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Jarrones"},{"visited":true,"generate":true,"status":[false,false,true,false],"wallStatus":[false,true,false,true],"pillarStatus":[false,true,false,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,true,false,false],"pillarStatus":[false,false,false,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Enemy2"},{"visited":true,"generate":false,"status":[true,false,false,false],"wallStatus":[false,true,false,false],"pillarStatus":[false,true,false,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Enemy2"},{"visited":true,"generate":false,"status":[true,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,false],"roomId":"Enemy2"},{"visited":true,"generate":true,"status":[false,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Jarrones"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Boss"}]},{"nombre":"10 X 5 9/9/2024 10:04:00 a. m.","dungeonSizex":10.0,"dungeonSizey":5.0,"datos":[{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[true,true,true,true],"roomId":"Vacio"},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[false,true,false,false],"pillarStatus":[false,true,false,false],"roomId":"Jarrones"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[false,false,true,false],"pillarStatus":[true,false,false,true],"roomId":"Enemy"},{"visited":true,"generate":false,"status":[false,false,true,true],"wallStatus":[false,true,false,false],"pillarStatus":[true,true,false,false],"roomId":"Enemy"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,true,false,false],"pillarStatus":[false,true,false,false],"roomId":"Enemy2"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Enemy"},{"visited":true,"generate":false,"status":[true,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[true,false,false,false],"wallStatus":[false,true,false,false],"pillarStatus":[true,true,false,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,true,false],"pillarStatus":[false,false,false,false],"roomId":"Enemy2"},{"visited":true,"generate":false,"status":[false,false,false,true],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Jarrones"},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,false,false],"roomId":"Enemy2"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,true,false],"pillarStatus":[false,false,false,true],"roomId":"Vacio"},{"visited":true,"generate":true,"status":[false,false,false,true],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Vacio"},{"visited":true,"generate":true,"status":[false,false,true,false],"wallStatus":[false,true,false,false],"pillarStatus":[false,true,false,false],"roomId":"Jarrones"},{"visited":true,"generate":true,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[true,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,false,true,false],"roomId":"Enemy2"},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,false,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Jarrones"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,true,false],"pillarStatus":[true,false,false,true],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,false,false,true],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,true,false,false],"pillarStatus":[false,false,false,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":true,"status":[false,true,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Enemy2"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,false,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Enemy2"},{"visited":true,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Boss"}]},{"nombre":"10 X 5 9/9/2024 10:04:33 a. m.","dungeonSizex":10.0,"dungeonSizey":5.0,"datos":[{"visited":true,"generate":false,"status":[false,true,true,false],"wallStatus":[false,false,false,false],"pillarStatus":[true,true,true,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[false,true,false,false],"pillarStatus":[true,true,false,false],"roomId":"Enemy2"},{"visited":true,"generate":true,"status":[false,true,false,false],"wallStatus":[true,false,true,false],"pillarStatus":[false,false,false,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,false,true],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Jarrones"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,true,false,false],"pillarStatus":[true,true,false,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Enemy"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,true,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[false,true,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,false,true,false],"roomId":"Jarrones"},{"visited":true,"generate":false,"status":[false,false,true,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":true,"generate":false,"status":[true,false,false,false],"wallStatus":[false,false,false,true],"pillarStatus":[false,true,true,false],"roomId":"Vacio"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,true,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Jarrones"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":true,"status":[false,false,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Enemy"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":true,"status":[false,true,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Jarrones"},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":false,"generate":false,"status":[false,false,false,false],"wallStatus":[false,false,false,false],"pillarStatus":[false,false,false,false],"roomId":""},{"visited":true,"generate":false,"status":[false,false,false,false],"wallStatus":[true,false,false,false],"pillarStatus":[false,false,true,true],"roomId":"Boss"}]}]}
+{
+  "dungeons": [
+    {
+      "nombre": "10 X 5 9/9/2024 10:03:48 a. m.",
+      "dungeonSizex": 10.0,
+      "dungeonSizey": 5.0,
+      "datos": [
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [true, true, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, true],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, true],
+          "pillarStatus": [false, true, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Boss"
+        }
+      ]
+    },
+    {
+      "nombre": "10 X 5 9/9/2024 10:04:00 a. m.",
+      "dungeonSizex": 10.0,
+      "dungeonSizey": 5.0,
+      "datos": [
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [true, true, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, true, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, true, false, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, true, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Boss"
+        }
+      ]
+    },
+    {
+      "nombre": "10 X 5 9/9/2024 10:04:33 a. m.",
+      "dungeonSizex": 10.0,
+      "dungeonSizey": 5.0,
+      "datos": [
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, true, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [true, true, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, true, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Boss"
+        }
+      ]
+    },
+    {
+      "nombre": "10 X 5 10/9/2024 10:36:44 p. m.",
+      "dungeonSizex": 10.0,
+      "dungeonSizey": 5.0,
+      "datos": [
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [true, true, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, true],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, false, false, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, true, true],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, true],
+          "pillarStatus": [false, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, true, false, true],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Boss"
+        }
+      ]
+    },
+    {
+      "nombre": "10 X 5 11/9/2024 6:46:09 p. m.",
+      "dungeonSizex": 10.0,
+      "dungeonSizey": 5.0,
+      "datos": [
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [true, true, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [false, false, false, true],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Enemy"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": true,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Enemy2"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, true, true, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [true, true, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": true,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, true, false],
+          "wallStatus": [false, true, false, false],
+          "pillarStatus": [false, true, false, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, true, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, true, false],
+          "pillarStatus": [true, false, false, true],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, true],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [true, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, true, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": false,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, false],
+          "pillarStatus": [false, false, false, false],
+          "roomId": ""
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [true, false, false, false],
+          "pillarStatus": [false, false, true, true],
+          "roomId": "Jarrones"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, true, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Vacio"
+        },
+        {
+          "visited": true,
+          "generate": false,
+          "status": [false, false, false, false],
+          "wallStatus": [false, false, false, true],
+          "pillarStatus": [false, false, true, false],
+          "roomId": "Boss"
+        }
+      ]
+    }
+  ]
+}

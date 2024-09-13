@@ -341,7 +341,6 @@ MonoBehaviour:
   - {fileID: 3127610319450085719}
   - {fileID: 5801921835755706245}
   - {fileID: 6287466987204945873}
-  _naveMesh: {fileID: 0}
 --- !u!1 &7617474042730821483
 GameObject:
   m_ObjectHideFlags: 0
