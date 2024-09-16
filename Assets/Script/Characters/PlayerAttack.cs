@@ -65,9 +65,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (damagable != null)
         {
-            _damageablesInRange.Add(damagable);
-            Debug.Log("Damagable Add " + other.name);
-            Debug.Log("Damagables in Range " + _damageablesInRange.Count); 
+            _damageablesInRange.Add(damagable);           
 
         }
 
@@ -78,7 +76,7 @@ public class PlayerAttack : MonoBehaviour
         if (damagable != null && _damageablesInRange.Contains(damagable))
         {
             _damageablesInRange.Remove(damagable);
-            Debug.Log("Damagables in Range " + _damageablesInRange.Count);
+
         }
 
     }

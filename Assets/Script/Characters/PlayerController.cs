@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _turnSmoothVelocity = 0.2f;
 
        
-    CharacterController _character;
+    //CharacterController _character;
+
+    NavMeshAgent _agent;
     Animator _anim;
 
     float _vMove;
@@ -25,13 +27,15 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _character = GetComponent<CharacterController>();
+        //_character = GetComponent<CharacterController>();
+        _agent = GetComponent<NavMeshAgent>();
         _anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {   
+        /*
         //Input Keyboard
         _hMove = Input.GetAxis("Horizontal") * -1;
         _vMove = Input.GetAxis("Vertical") * -1;
@@ -57,6 +61,32 @@ public class PlayerController : MonoBehaviour
  
         //Control de Animaciones
         _anim.SetFloat("WalkVelocity",_direction.magnitude, 0.05f, Time.deltaTime);     
-         
+         */         
+
+        if(Input.GetMouseButtonDown(0)){
+            MoveTo();
+        }
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            _agent.speed = 6; 
+        }
+        else
+            _agent.speed =3;
+
+        _anim.SetFloat("WalkVelocity", _agent.velocity.magnitude / _agent.speed, 0.05f, Time.deltaTime);
+
     }   
+
+    private void MoveTo(){
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (NavMesh.SamplePosition(hit.point, out NavMeshHit navMeshHit, 1.0f, NavMesh.AllAreas))
+            {
+                _agent.SetDestination(navMeshHit.position);
+            }
+        }
+    }
+    
 }

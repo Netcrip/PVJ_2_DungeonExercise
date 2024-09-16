@@ -1,11 +1,10 @@
 using System;
-using System.Collections;
+
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
+
+
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
+using Object = UnityEngine.Object;
 
 public class DungeonGenerator : MonoBehaviour
 {
@@ -13,9 +12,11 @@ public class DungeonGenerator : MonoBehaviour
     [SerializeField] Vector2 _dungeonSize;
     [SerializeField] int _startPos = 0;
 
-    //[SerializeField] GameObject[]  _rooms;
+    [SerializeField] GameObject  _Player;
     [SerializeField] Vector2 _offset;
     [SerializeField] RoomConfiguration _roomConfiguration;
+
+ 
 
     DungeonFactory _dungeonFactory;
     BoardManager _boardManager;
@@ -24,20 +25,24 @@ public class DungeonGenerator : MonoBehaviour
 
     LoadDungeons _loadDungeons;
 
-    //List<Cell> _board;
-   
+    MeshManager _mesh;
 
+    //List<Cell> _board;
    private void Awake() {
      _dungeonFactory = new DungeonFactory(Instantiate(_roomConfiguration));
      _boardManager = new BoardManager(_dungeonSize);
      _mazeManager = new MazeManager(_boardManager,_dungeonSize);
      _saveDungeon = new SaveDungeon();
      _loadDungeons = new LoadDungeons();
+     _mesh= new MeshManager();
    }
     // Start is called before the first frame update 
     void Start()
     {
         GenerateDungeon();
+        _mesh.GenerateNavMesh();
+       
+        Instantiate(_Player, new Vector3(0f, 0.1f, 0f), Quaternion.identity);
     }
 
 
