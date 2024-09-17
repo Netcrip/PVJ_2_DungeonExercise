@@ -17,6 +17,7 @@ public class DungeonFactory
     {
         int totalWidth = Mathf.FloorToInt(dungeonSize.x);
         int totalHeight = Mathf.FloorToInt(dungeonSize.y);
+       
 
         for (int i = 0; i < totalWidth; i++)
         {
@@ -32,11 +33,9 @@ public class DungeonFactory
                     rb.UpdateRoom(currentCell);
 
                     rb.name += " " + i + "-" + j;
-
-                 board[Mathf.FloorToInt(i + j * dungeonSize.x)].roomId = id;
+                    board[Mathf.FloorToInt(i + j * dungeonSize.x)].roomId = id;
                 }            
             }
         }
-         Debug.Log(dungeonSize);
     }
 }
